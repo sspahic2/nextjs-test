@@ -6,9 +6,9 @@
   "author": "sspahic2 <spahic.sabahudin1@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node app.js",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=development node app.js",
     "lint": "next lint"
   },
   "dependencies": {
