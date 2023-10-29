@@ -1,0 +1,22 @@
+{
+  "name": "nextjs-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/sspahic2/nextjs-test.git",
+  "author": "sspahic2 <spahic.sabahudin1@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/node": "^20.8.9",
+    "@types/react": "^18.2.33",
+    "next": "12.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^5.2.2"
+  }
+}
