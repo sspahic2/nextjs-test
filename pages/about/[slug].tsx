@@ -4,6 +4,7 @@ const Page: NextPage = (props: any) => {
   return(
     <>
       <h1>About {props.data}</h1>
+      <div>{props.date}</div>
     </>
   )
 };
@@ -18,11 +19,13 @@ export const getStaticPaths: GetStaticPaths = async() => {
 
 export const getStaticProps: GetStaticProps = async(context) => {
   const data = context.params?.slug?.toString();
+
   return {
     props: {
       data: data,
-      revalidate: 6
-    }
+      date: new Date().toString()
+    },
+    revalidate: 10
   };
 };
 

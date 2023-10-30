@@ -1,6 +1,6 @@
 import { GetStaticProps } from "next";
 
-const Home = (props: any) => {
+const Home = (props: { data: string[], date: string }) => {
   return (
     <>
       <div>Hello World! Again!</div>
@@ -11,15 +11,19 @@ const Home = (props: any) => {
           })
         }
       </div>
+      <div>{props.date}</div>
     </>
   );
 };
 
 export const getStaticProps: GetStaticProps = async() => {
+  const date = new Date();
   return {
     props: {
-      data: ['a', 'b', 'c', 'd']
-    }
+      data: ['a', 'b', 'c', 'd'],
+      date: date.toString()
+    },
+    revalidate: 60
   }
 }
 

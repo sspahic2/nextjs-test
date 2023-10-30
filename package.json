@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "NODE_ENV=production node app.js",
     "lint": "next lint",
-    "local_start": "next start"
+    "local_start": "node app.js"
   },
   "dependencies": {
     "@types/node": "^20.8.9",
