@@ -23,7 +23,7 @@ export const getStaticProps: GetStaticProps = async() => {
       data: ['a', 'b', 'c', 'd'],
       date: date.toString()
     },
-    revalidate: 60
+    revalidate: 10
   }
 }
 
