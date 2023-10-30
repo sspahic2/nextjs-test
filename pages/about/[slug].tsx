@@ -20,7 +20,8 @@ export const getStaticProps: GetStaticProps = async(context) => {
   const data = context.params?.slug?.toString();
   return {
     props: {
-      data: data
+      data: data,
+      revalidate: 6
     }
   };
 };
